@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>三位以内算术练习</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="content">
+    <div class="left">
+      <form class="question">
+        <span id="num1"></span><span id="op1"></span><span id="num2"></span><span id="op2"></span><span
+          id="num3"></span><span>=</span>
+        <input type="text" class="user_answer">
+        <button id="sub" type="submit">提交</button>
+        <button id="rem" type="default">清除答案</button>
+        <!-- <button id="next" type="default">下一题</button> -->
+      </form>
+      <div class="special"></div>
+    </div>
+    <div class="right">
+      <div class="timer"></div>
+      <ul class="user">
+        <li>📝 练习总数：<span class="all">0</span><span> 道</span></li>
+        <li>🔍 答对总数：<span class="right_num">0</span><span> 道</span></li>
+        <li>📈 准确率：<span class="right_rate">0</span><span>%</span></li>
+        <li>🕐 总时长：<span class="time_sum">0</span><span> sec</span></li>
+      </ul>
+    </div>
+    <div class="info">答错了再试一试</div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
